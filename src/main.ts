@@ -6,6 +6,7 @@ import {installWidgets } from '@/widgets'
 
 
 
+
 const app = createApp(App).use(store).use(router);
 installWidgets(app)
 app.mount('#app');

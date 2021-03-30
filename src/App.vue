@@ -5,7 +5,7 @@
  <router-view />
 </template>
 
-<script lang="ts">
+<script lang="tsx">
 import { defineComponent } from 'vue'
 import { counterHelper, Count } from '@/store/modules/counter/type';
 
@@ -13,10 +13,15 @@ export default defineComponent({
   name: 'App',
   computed: {
     ...counterHelper.mapGetters([Count])
-  }
+  },
+  data() {
+    return {
+      a: ''
+    }
+  },
 })
 </script>
-
+  
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

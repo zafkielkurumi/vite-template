@@ -25,16 +25,12 @@
   <button @click="count++">count is: {{ count }}</button>
   <p>
     Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement.
+    <code>components/HelloWorld.vue</code> to test hot module replacement1.
   </p>
 </template>
 
-<script lang="ts">
+<script lang="tsx">
 import { ref, defineComponent } from 'vue';
-
-
-const HttpBase= import.meta.env.VITE_BASE_URL;
-console.log(HttpBase);
 
 export default defineComponent({
   name: 'HelloWorld',
@@ -46,6 +42,9 @@ export default defineComponent({
   setup: () => {
     const count = ref(0)
     return { count }
+  },
+  render: () => {
+    return (<div>Vue 3</div>)
   }
 })
 </script>
