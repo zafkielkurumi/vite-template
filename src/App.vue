@@ -14,11 +14,6 @@ export default defineComponent({
   computed: {
     ...counterHelper.mapGetters([Count])
   },
-  data() {
-    return {
-      a: ''
-    }
-  },
 })
 </script>
   

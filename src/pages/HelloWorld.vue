@@ -25,7 +25,7 @@
   <button @click="count++">count is: {{ count }}</button>
   <p>
     Edit
-    <code>components/HelloWorld.vue</code> to test hot module replacement1.
+    <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
 </template>
 
@@ -43,9 +43,6 @@ export default defineComponent({
     const count = ref(0)
     return { count }
   },
-  render: () => {
-    return (<div>Vue 3</div>)
-  }
 })
 </script>
 
