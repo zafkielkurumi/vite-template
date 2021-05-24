@@ -1,19 +1,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <StateView></StateView>
-  <div>store --{{Count}}</div>
  <router-view />
 </template>
 
 <script lang="tsx">
 import { defineComponent } from 'vue'
-import { counterHelper, Count } from '@/store/modules/counter/type';
 
 export default defineComponent({
   name: 'App',
-  computed: {
-    ...counterHelper.mapGetters([Count])
-  },
+
 })
 </script>
   

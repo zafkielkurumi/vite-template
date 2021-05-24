@@ -9,7 +9,7 @@ const routes: RouteRecordRaw[] = [{
 }, {
     path: '/welcome',
     component: HelloWorld
-}]
+},  { path: '/:pathMatch(.*)*', name: 'not-found', redirect: '/welcome'}]
 
 export default createRouter({
     history: createWebHistory(),
